@@ -1,7 +1,7 @@
 import { bufferToBase64, base64ToBuffer } from './utils';
 import { VaultData } from './types';
 
-const PBKDF2_ITERATIONS = 100000;
+const PBKDF2_ITERATIONS = 600000;
 const SALT_LEN = 16;
 const IV_LEN = 12;
 

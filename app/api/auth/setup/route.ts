@@ -4,7 +4,6 @@ import { KVStoreSchema } from '@/lib/types';
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
     const { authHash, salt } = await request.json();
 
     if (!authHash || !salt) {

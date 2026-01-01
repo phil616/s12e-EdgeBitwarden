@@ -2,7 +2,11 @@ import crypto from 'crypto';
 
 // Server-side secret key for wrapping the user's Master Key
 // In production, this should be a secure environment variable or HSM
-const SERVER_SECRET_KEY = process.env.KV_API_KEY || 'default-server-secret-do-not-use-in-prod';
+const SERVER_SECRET_KEY = process.env.KV_API_KEY;
+
+if (!SERVER_SECRET_KEY) {
+  throw new Error('KV_API_KEY environment variable is not set');
+}
 
 // We use AES-256-GCM for wrapping
 const ALGORITHM = 'aes-256-gcm';
