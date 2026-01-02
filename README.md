@@ -1,5 +1,10 @@
 # EdgeBitwarden
 
+<p align="center">
+  <a href="https://github.com/dreamreflex/serverlesslize">
+    <img src="https://img.shields.io/badge/dreamreflex-serverless-blue" width="150"></a>
+</p>
+
 EdgeBitwarden 是一个基于 Next.js 构建的现代、安全且注重隐私的密码管理器。它采用了最新的 Web 技术标准，旨在为用户提供类似于商业级密码管理器的体验，同时保持开源和可自托管的灵活性。
 
 ![Preview](image.png)
